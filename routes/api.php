@@ -27,3 +27,5 @@ Route::get('getColonias',  ['uses' => 'AtropelladoAPIController@getColonias']);
 Route::get('getIncidenteTipo/{tipo}',  ['uses' => 'AtropelladoAPIController@getIncidenteTipo']);
 
 Route::get('getColoniaSearch/{colonia}',  ['uses' => 'AtropelladoAPIController@getColoniaSearch']);
+
+Route::get('getIncidenteSexo/{sexo}',  ['uses' => 'AtropelladoAPIController@getIncidenteSexo']);

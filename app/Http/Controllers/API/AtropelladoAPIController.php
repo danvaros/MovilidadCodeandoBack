@@ -148,4 +148,11 @@ class AtropelladoAPIController extends AppBaseController
 
         return $this->sendResponse($colonias, 'Las colonias se filtraron de acuerdo a '. $colonia .'.');
     }
+
+    public function getIncidenteSexo($sexo)
+    {
+        $incidentes = \App\Models\Hecho::where('Sexo','=',$sexo)->get();
+
+        return $this->sendResponse($incidentes, 'Los incidentes se filtraron de acuerdo al sexo '. $sexo .'.');
+    }
 }
